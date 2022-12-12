@@ -1,4 +1,21 @@
+nav {
+    font-size: large;
+}
+
+a {
+    margin-right: 10px;
+}
+
 .jumbotron {
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
     margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.keunggulan {
+    margin-top: 200px;
+    margin-bottom: 20px;
 }
