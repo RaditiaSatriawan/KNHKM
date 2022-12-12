@@ -8,14 +8,23 @@
   <body>
     <div class="center">
       <h1>Masuk</h1>
-      <form method="post">
+      <form action="/login" method="post">
+       {{ csrf_field() }}
         <div class="txt_field">
-          <input type="text" required>
+          <input id="username" name="username" type="text" required autofocus>
           <span></span>
-          <label>Nama Pengguna</label>
+          <label for="username">Nama Pengguna</label>
+        
+          <!-- @error('username')
+            <div class="invalid-feedback">
+             {{ $message }}
+            </div>
+            class="form-control @error('username') is-invalid @enderror"
+          @enderror -->
+        
         </div>
         <div class="txt_field">
-          <input type="password" required>
+          <input name="password" id="password" type="password" required>
           <span></span>
           <label>Kata Sandi</label>
         </div>
