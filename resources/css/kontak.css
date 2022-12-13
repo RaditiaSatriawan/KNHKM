@@ -13,9 +13,16 @@ a {
 
 h2 {
     margin-bottom: 50px;
+    font-size: 100px;
 }
 
 .keunggulan {
     margin-top: 200px;
     margin-bottom: 20px;
+}
+
+a {
+    font-size: 60px;
+    text-decoration: none;
+    color: black;
 }
