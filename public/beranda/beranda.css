@@ -9,14 +9,11 @@ footer {
 
 a {
     text-decoration: none;
+    margin-right: 10px;
 }
 
 section {
-    padding: 5rem 1rem;
-}
-
-a {
-    margin-right: 10px;
+    padding: 100px 100px;
 }
 
 button {
