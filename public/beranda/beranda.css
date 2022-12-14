@@ -2,12 +2,26 @@ nav {
     font-size: large;
 }
 
+footer {
+    font-size: large;
+    text-decoration: none;
+}
+
 a {
+    text-decoration: none;
     margin-right: 10px;
 }
 
+section {
+    padding: 100px 100px;
+}
+
+button {
+    padding: 2rem 4rem;
+}
+
 .jumbotron {
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
     margin-top: 20px;
 }
 
