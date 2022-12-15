@@ -21,8 +21,17 @@ h2 {
     margin-bottom: 20px;
 }
 
+footer {
+    font-size: large !important;
+    text-decoration: none;
+}
+
 a {
     font-size: 60px;
     text-decoration: none;
     color: black;
+}
+
+.knhkm {
+    font-size: large;
 }
