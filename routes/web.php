@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +20,11 @@ Route::get('/', function () {
 });
 
 
-Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/login', [AuthController::class, 'authenticate']);
 
 Route::get('/dashboard', function () {
+    // 'uses' => 'DashboardController@index',
+    // 'as' => 'dashboard.index',
     return view('greetings\index');
-});
+}
+);
