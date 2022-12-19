@@ -25,16 +25,157 @@
         </div>
         <div class="navbar-center">
             <ul>
-                <li><a href="" class="active"><img src="../../../public/all-image/home.png" alt=""><span>Jobs Apply</span></a></li>
-                <li><a href=""><img src="../../../public/all-image/network.png" alt=""><span>Project Fair</span></a></li>
+                <li><a href="" class="active"><img src="../../../public/all-image/home.png" alt=""><span>Jobs
+                            Apply</span></a></li>
+                <li><a href=""><img src="../../../public/all-image/network.png" alt=""><span>Project Fair</span></a>
+                </li>
             </ul>
         </div>
         <div class="navbar-right">
-            <div class="online">  
-                <img src="../../../public/all-image/user-1.png" class="nav-profile-img">
+            <div class="online">
+                <img src="../../../public/all-image/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+    <!-- profile dropdown menu -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="../../../public/all-image/user-1.png" alt="">
+                    <div>
+                        <h3>Raditia Satriawan</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="" class="profile-menu-link">
+                    <img src="../../../public/all-image/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="" class="profile-menu-link">
+                    <img src="../../../public/all-image/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="" class="profile-menu-link">
+                    <img src="../../../public/all-image/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
             </div>
         </div>
     </nav>
+
+    <!-- content -->
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="../../../public/all-image/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="../../../public/all-image/user-1.png" alt="">
+                    <h1>Raditia Satriawan</h1>
+                    <h3>Web Developer at KNHKM</h3>
+                    <ul>
+                        <li>Your Profile Views <span>52</span></li>
+                        <li>Your Total Post <span>4</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="../../../public/all-image/items.png" alt=""> My Items</a>
+                    <a href="#"><img src="../../../public/all-image/premium.png" alt=""> Try Premium</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="../../../public/all-image/recent.png">Web Development</a>
+                <a href="#"><img src="../../../public/all-image/recent.png">User Interface</a>
+                <a href="#"><img src="../../../public/all-image/recent.png">Online Teaching</a>
+                <a href="#"><img src="../../../public/all-image/recent.png">Neat Code</a>
+                <a href="#"><img src="../../../public/all-image/recent.png">Group Learning</a>
+                <a href="#"><img src="../../../public/all-image/recent.png">Online Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="../../../public/all-image/group.png">Online Learning Group</a>
+                <a href="#"><img src="../../../public/all-image/group.png">Web Design Group</a>
+                <a href="#"><img src="../../../public/all-image/group.png">Python Group</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="../../../public/all-image/user-1.png" alt="">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="../../../public/all-image/photo.png" alt="">Photo</li>
+                    <li><img src="../../../public/all-image/video.png" alt="">Video</li>
+                    <li><img src="../../../public/all-image/event.png" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="../../../public/all-image/user-3.png" alt="">
+                    <div>
+                        <h1>Kertya Pramana</h1>
+                        <small>Backend Engineer at KNHKM</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum excepturi atque doloremque temporibus accusantium, illum delectus quasi eum et aliquam quod consequatur blanditiis harum quia. Nesciunt similique optio ex.</p>
+                <img src="../../../public/all-image/post-image-1.png" width="100%">
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="../../../public/all-image/user-3.png" alt="">
+                    <div>
+                        <h1>Kertya Pramana</h1>
+                        <small>Backend Engineer at KNHKM</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum excepturi atque doloremque temporibus accusantium, illum delectus quasi eum et aliquam quod consequatur blanditiis harum quia. Nesciunt similique optio ex.</p>
+                <img src="../../../public/all-image/post-image-1.png" width="100%">
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="../../../public/all-image/user-3.png" alt="">
+                    <div>
+                        <h1>Kertya Pramana</h1>
+                        <small>Backend Engineer at KNHKM</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum excepturi atque doloremque temporibus accusantium, illum delectus quasi eum et aliquam quod consequatur blanditiis harum quia. Nesciunt similique optio ex.</p>
+                <img src="../../../public/all-image/post-image-1.png" width="100%">
+            </div>
+        </div>
+        
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="../../../public/all-image/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High Demand for skilled manpower</a>
+                <span>1d ago &middot; 696.969 readers</span>
+                <a href="#">High Demand for skilled manpower</a>
+                <span>1d ago &middot; 696.969 readers</span>
+                <a href="#">High Demand for skilled manpower</a>
+                <span>1d ago &middot; 696.969 readers</span>
+                <a href="#">High Demand for skilled manpower</a>
+                <span>1d ago &middot; 696.969 readers</span>
+                <a href="#">High Demand for skilled manpower</a>
+                <span>1d ago &middot; 696.969 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../public/jobpage/script.js"></script>
 </body>
 
 </html>
