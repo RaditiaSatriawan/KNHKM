@@ -2,111 +2,252 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CarFi - Solusi Untuk Pekerja</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../public/beranda/beranda.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../../public/beranda/style.css">
+
+
+    <title>CarFi | Solusi Untuk Anda</title>
 </head>
 
-<body>
-    <!-- Navbar nih -->
-    <nav class="navbar navbar-expand-lg">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#">CarFi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src=" logo disini " alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-                    <a class="nav-link" href="login/index.blade.html">Masuk</a>
-                    <a class="nav-link" href="signup/index.html">Daftar</a>
-                    <a class="nav-link" href="../views/siapakita/index.html">Kontak Kami</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Layanan CarFi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Kenapa CarFi?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Tim</a>
+                    </li>
+                </ul>
+                <a href="login/index.blade.php"><button link="" class="btn btn-primary ms-lg-3">Masuk</button></a>
+                <a href="signup/index.html"><button class="btn btn-outline-primary ms-lg-3">Daftar</button></a>
+                
+                
+            </div>
+        </div>
+    </nav><!-- //NAVBAR -->
+
+    <!-- HERO -->
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
+                    <h1 class="display-4 text-white">Career Finder</h1>
+                    <p class="text-white my-3">CarFi Membantu Anda Meniti Karir Ataupun Melanjutkan Karir Anda</p>
+                    <a href="login/index.blade.php" class="btn me-2 btn-primary">Masuk</a>
+                    <a href="signup/index.html" class="btn btn-outline-light">Daftar</a>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- //HERO -->
 
-    <!-- jumbotron -->
-    <section class="jumbotron">
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-center">
-                <img src="../../public/all-image/hero_1.jpg" alt="" width="270px" height="270px">
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">Layanan</h6>
+                    <h1>Apa Yang CarFi Lakukan?</h1>
+                    <p>CarFi Akan Menjadi Sahabat Anda Untuk Meniti Karir Anda Ataupun Melanjutkan Karir Anda</p>
+                </div>
             </div>
-            <div class="col-md-4 m-5 text-center">
-                <h1 class="judul display-4">Pengangguran</h1>
-                <p class="lead">CarFi Adalah Solusi yang Tepat Untuk Anda</p>
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect bounceInUp">
+                        <div class="iconbox">
+                            <img src="../../public/all-image/bracelet.png">
+                        </div>
+                        <h5 class="mt-4 mb-2">Sahabat</h5>
+                        <p>CarFi akan menjadi sahabat Anda dalam meniti karir dan menjadi saksi sejarah kehidupan, karir, dan perjalanan Anda</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <img src="../../public/all-image/golden-gate-bridge.png">
+                        </div>
+                        <h5 class="mt-4 mb-2">Jembatan</h5>
+                        <p>CarFi akan menjembatani Anda dalam berhubungan dengan client ataupun para pengiklan pekerjaan yang akan sangat membantu Anda</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <img src="../../public/all-image/helppeep.png">
+                        </div>
+                        <h5 class="mt-4 mb-2">Membantu</h5>
+                        <p>CarFi akan membantu Anda dalam mencari pekerjaan yang cocok dan mencari proyek yang sesuai dengan kemampuan dan keahlian Anda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- SERVICES -->
+
+    <!-- FEATURES -->
+    <section class="row w-100 py-0 bg-light" id="features">
+        <div class="col-lg-6 col-img">
+            <img src="../../public/all-image/feature-crop.jpg" height="100%">
+        </div>
+        <div class="col-lg-6 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h6 class="text-primary">Kenapa Harus CarFi?</h6>
+                        <h1>CarFi Adalah Solusi Untuk Anda</h1>
+                        <p>CarFi akan membantu anda dalam meniti karir dan mencari pekerjaan yang cocok untuk Anda</p>
+
+                        <div class="feature d-flex mt-5">
+                            <div class="iconbox my-auto me-3">
+                                <i class='bx bxs-comment-edit'></i>
+                            </div>
+                            <div>
+                                <h5>User Experience</h5>
+                                <p>CarFi adalah platform yang memiliki User Experience yang nyaman digunakan bagi Anda</p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex">
+                            <div class="iconbox my-auto me-3">
+                                <i class='bx bxs-user-circle'></i>
+                            </div>
+                            <div>
+                                <h5>Mudah Untuk Digunakan</h5>
+                                <p>Tidak perlu mengerti banyak hal untuk menggunakan platform CarFi, tinggal klik dan Anda mendapatkan pekerjaan Anda</p>
+                            </div>
+                        </div>
+                        <div class="feature d-flex">
+                            <div class="iconbox my-auto  me-3">
+                                <i class='bx bxs-download'></i>
+                            </div>
+                            <div>
+                                <h5>Satu Tempat Untuk Semua</h5>
+                                <p>CarFi dapat digunakan untuk mengenal orang lain, mencari pekerjaan, mencari proyek, bahkan CarFi dapat menjadi teman anda</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- FEATURES -->
+
+    <!-- TEAM -->
+    <section id="team">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">Tim Kami</h6>
+                    <h1>Katakan Halo Kepada Kami</h1>
+                    <p>Kami adalah masyarakat biasa yang memiliki kepedulian terhadap sesama, demi memajukan Bangsa Indonesia</p>
+                </div>
+            </div>
+            <div class="row text-center g-4 justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="../../public/all-image/user-1.png" alt="">
+                        <h5 class="mb-0 mt-4">Putu Raditia Satriawan</h5>
+                        <p>Front-end Web Developer</p>
+                        <div class="social-icons">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="../../public/all-image/user-2.png" alt="">
+                        <h5 class="mb-0 mt-4">Gede Kertya Pramana</h5>
+                        <p>Back-end Web Developer</p>
+                        <div class="social-icons">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="../../public/all-image/user-3.png" alt="">
+                        <h5 class="mb-0 mt-4">I Dewa Made Adi Kresna</h5>
+                        <p>Admin</p>
+                        <div class="social-icons">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- TEAM -->
 
-    <!-- Keunggulan -->
-    <section class="keunggulan p-5">
-        <div class="row text-center">
-            <h2>Keunggulan Kami</h2>
-        </div>
-        <div class="row justify-content-center p-4">
-            <div class="col-md-4 text-center">
-                <img src="../../public/all-image/hero_1.jpg" alt="" width="270px" height="270px">
-            </div>
-            <div class="col-md-6 text-center m-5">
-                <h1 class="display-4">Career Finder</h1>
-                <p class="lead">Memungkinkan Para Profesional untuk Terhubung Satu Sama Lain dan Menemukan Peluang Kerja</p>
-            </div>
-        </div>
-        <div class="row justify-content-center p-4">
-            <div class="col-md-4 order-1 order-md-2 text-center">
-                <img src="../../public/all-image/hero_1.jpg" alt="" width="270px" height="270px">
-            </div>
-            <div class="col-md-6 order-2 order-md-1 text-center m-5">
-                <h1 class="display-4">Career Finder</h1>
-                <p class="lead">Menawarkan Solusi bagi Para Profesional untuk Menawarkan Layanan Mereka sebagai Pekerja Lepas kepada Klien yang Membutuhkan Keterampilan atau Keahlian Khusus</p>
-            </div>
-        </div>
-        <div class="row justify-content-center p-4 text-center">
-            <div class="col-md-4">
-                <img src="../../public/all-image/hero_1.jpg" alt="" width="270px" height="270px">
-            </div>
-            <div class="col-md-6 text-center m-5">
-                <h1 class="display-4">Career Finder</h1>
-                <p class="lead">Menjadi Jembatan Sangat Panjang dan Lebar yang Menghubungkan Para Profesional dengan Proyek Lepas</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Us -->
-    <section>
-        <div class="row justify-content-center">
-            <div class="col-6 justify-content-center text-center">
-                <h2>Tunggu Apa Lagi, Ayo Bergabung ke CarFi Sekarang!</h2>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <img class="logo" src="img/logo-white.svg" alt="">
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-white">Brand</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="mailto:hq.careerfinder@gmail.com">Email</a></li>
+                            <li><a href="https://api.whatsapp.com/send/?phone=6285940820345&text&type=phone_number&app_absent=0">Whatsapp</a></li>
+                            <li><a href="https://github.com/RaditiaSatriawan/KNHKM">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-white">More</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
+                            <li><a href="#">Warranty</a></li>
+                            <li><a href="#">Shipment</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-white">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li>Alamat: Jl. Pramuka No.4, Banjar Jawa, Kec. Buleleng, Kabupaten Buleleng, Bali 81113</li>
+                            <li>Email: hq.careerfinder@gmail.com</li>
+                            <li>Phone: +62 859-4082-0345</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-md-2 text-center">
-                <button type="button" class="btn btn-outline-primary btn-lg">Masuk</button>
-            </div>
-            <div class="col-md-2 text-center">
-                <button type="button" class="btn btn-outline-primary btn-lg">Daftar</button>
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">© 2022 copyright all right reserved<i
+                            class="bx bx-heart text-danger"></i> by <a
+                                href="https://www.youtube.com/channel/UCYMEEnLzGGGIpQQ3Nu_sBsQ"
+                                class="text-white">KNHKM</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- footer -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#0d6efd" fill-opacity="1"
-            d="M0,160L17.1,170.7C34.3,181,69,203,103,218.7C137.1,235,171,245,206,240C240,235,274,213,309,192C342.9,171,377,149,411,165.3C445.7,181,480,235,514,250.7C548.6,267,583,245,617,202.7C651.4,160,686,96,720,90.7C754.3,85,789,139,823,176C857.1,213,891,235,926,234.7C960,235,994,213,1029,213.3C1062.9,213,1097,235,1131,218.7C1165.7,203,1200,149,1234,112C1268.6,75,1303,53,1337,48C1371.4,43,1406,53,1423,58.7L1440,64L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z">
-        </path>
-    </svg>
-    <footer class="bg-primary text-white text-center p-3">
-        <p>Created With Love by <a class="text-white fw-bold" href="../views/siapakita/index.html">KNHKM</a></p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
-</body>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
 </html>
