@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: beige;
+    background-color: #f3f3f3;
 }
 
 a {
@@ -40,7 +40,7 @@ a {
     display: flex;
     align-items: center;
     font-size: 14px;
-    margin: 5px 8px;
+    margin: 20px 5px 8px;
     padding-right: 5px;
     position: relative;
     color: black;
@@ -53,7 +53,7 @@ a {
     height: 2px;
     background: #045be6;
     position: absolute;
-    bottom: -15px;
+    bottom: -5px;
     transition: width 0.3s;
 }
 
@@ -423,7 +423,8 @@ a {
 
 .user-info h3{
     font-weight: 500;
-    margin-bottom: -7px;
+    font-size: x-large;
+    margin-bottom: -2px;
 }
 
 .user-info a{
@@ -447,6 +448,7 @@ a {
 }
 
 .profile-menu-link p{
+    margin-top: 12px;
     width: 100%;
 }
 
@@ -459,18 +461,18 @@ a {
 /* profile main */
 
 .profile-main{
-    flex-basis: 73%;
-}
-
-.profile-sidebar{
-    flex-basis: 25%;
-    align-self: flex-start;
-    position: sticky;
-    top: 73px;
+    flex-basis: 100%;
 }
 
 .profile-container{
     background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .profile-container-inner{
@@ -504,6 +506,8 @@ a {
     background: #fff;
     padding: 20px 4% 30px;
     margin: 12px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-description h2{
@@ -560,6 +564,8 @@ a {
     background: #fff;
     padding: 20px 4% 30px;
     margin: 12px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .education h2{
