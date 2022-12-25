@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Masuk - CarFi</title>
+    <link rel = "icon" href ="../../../public/all-image/carfilogo1.png" type = "image/x-icon">
     <link rel="stylesheet" href="logincss/style.css">
   </head>
   <body>
