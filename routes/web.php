@@ -15,16 +15,19 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', function () {
-    return view('login\index');
-});
+// Route::get('/', function () {
+//     return view('login\index');
+// });
 
 
-Route::post('/login', [AuthController::class, 'authenticate']);
+// Route::post('/login', [AuthController::class, 'authenticate']);
 
-Route::get('/dashboard', function () {
-    // 'uses' => 'DashboardController@index',
-    // 'as' => 'dashboard.index',
-    return view('greetings\index');
-}
-);
+// Route::get('/dashboard', function () {
+//     // 'uses' => 'DashboardController@index',
+//     // 'as' => 'dashboard.index',
+//     return view('greetings\index');
+// }
+// );
+Auth::routes();
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
