@@ -111,7 +111,10 @@ input[type="submit"]:hover{
 .signup_link a:hover{
   text-decoration: underline;
 }
-
+.invalid-feedback strong{
+  border: none;
+  text-decoration: none;
+}
 @media (max-width: 620px) {
   body{
     width: 400px !important;
