@@ -31,7 +31,7 @@
         </div>
         <input type="submit" value="Masuk">
         <div class="signup_link">
-          Bukan Anggota? <a href="../signup/index.html">Daftar</a>
+          Bukan Anggota? <a action={{ {{ route('register') }}}}>Daftar</a>
         </div>
       </form>
     </div>
