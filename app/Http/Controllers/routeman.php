@@ -16,4 +16,7 @@ class routeman extends Controller
      public function profile() {
         return view('profilepage/index');
      }
+     public function profileedit() {
+      return view('profileSetting/index');
+   }
 }

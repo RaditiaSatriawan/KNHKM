@@ -29,8 +29,4 @@ class HomeController extends Controller
     {
         return view('greetings\index');
     }
-    public function jobpage()
-    {
-        return view('jobpage\index');
-    }
 }

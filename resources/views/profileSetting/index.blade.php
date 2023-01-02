@@ -119,7 +119,7 @@
 							</div>
 						</div>
 						<div>
-							<button class="btn btn-primary">Perbarui</button>
+							<button action="/uploadprofile" method="POST" class="btn btn-primary">Perbarui</button>
 							<button class="btn btn-light">Batal</button>
 						</div>
 					</div>

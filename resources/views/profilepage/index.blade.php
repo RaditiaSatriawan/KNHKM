@@ -9,9 +9,10 @@
                 <img class="banner" src="all-image/cover-pic.png" width="100%">
                 <div class="profile-container-inner">
                     <img src="all-image/user-1.png" class="profile-pic">
-                    <h1>Raditia Satriawan</h1>
+                    <h1>{{ Auth::user()->name }}</h1>
                     <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nesciunt!</b>
-                    <p>Bali, Indonesia &middot; <a href="#">Kontak</a></p>
+                    <p>Bali, Indonesia &middot; <a href="#">Kontak</a> &middot; <a style="color: var(--bs-link-color);" onclick="event.preventDefault();document.getElementById('prope').submit();">Edit Profil<form id="prope" action="/profiledit" ></form></a></p>
+                    
                 </div>
             </div>
             <div class="profile-description">

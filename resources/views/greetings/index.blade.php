@@ -25,8 +25,8 @@
 
     <div class="row justify-content-center">
         <div class="col-md-2 text-center">
-            <form action='/jobpage' method="POST">
-                <button  type="submit" class="btn btn-outline-primary btn-lg">Mulai Bekerja</button>
+            <form action="/">
+                <button type="submit" class="btn btn-outline-primary btn-lg">Mulai Bekerja</button>
             </form>
         </div>
     </div>
