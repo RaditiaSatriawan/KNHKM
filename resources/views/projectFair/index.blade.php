@@ -1,9 +1,33 @@
 @extends('layouts.navi')
 @section('content')
+<head>
+    <style>
+        input[type="file"]{
+            display: none;
+        }
+        .sidebar-news a{
+            margin: 20px;
+        }
+        .kategori{
+            border-radius: 0;
+        }
+        .dropdown-menu li{
+            border-radius: 0;
+            border-bottom-right-radius: 0;
+            border: 0;
+        }
+        .dropdown-menu li:last-child{
+            background: white;
+            color: black;
+            border-top: 0;
+            border-right: 0;
+            border-bottom-right-radius: 0;
+        }
+    </style>
+</head>
 <body>
 
     <!-- content -->
-FAIRPAGE
     <div class="container">
         <div class="left-sidebar">
             <div class="sidebar-profile-box">
@@ -19,13 +43,6 @@ FAIRPAGE
                     <a href="profilepage/index.html">Profil Saya</a>
                 </div>
             </div>
-
-            <div class="sidebar-activity">
-                <h3>Baru-Baru Ini</h3>
-                <a href="#"><img src="all-image/recent.png">Web Development</a>
-                <a href="#"><img src="all-image/recent.png">User Interface</a>
-                <a href="#"><img src="all-image/recent.png">Online Teaching</a>
-            </div>
         </div>
         <div class="main-content">
             <div class="create-post">
@@ -33,9 +50,28 @@ FAIRPAGE
                     <img src="all-image/user-1.png" alt="">
                     <textarea rows="2" placeholder="Buat Unggahan"></textarea>
                 </div>
-                <div class="create-post-links">
-                    <li><img src="all-image/photo.png" alt="">Foto</li>
-                    <li><img src="all-image/video.png" alt="">Video</li>
+                <div class="create-post-links justify-content-center">
+                    <li>
+                        <input type="file" id="photo" accept="image/*">
+                        <label for="file"> <img src="all-image/photo.png" alt="">Foto</label>
+                    </li>
+
+                    <li>
+                        <input type="file" id="photo" accept="image/*">
+                        <label for="file"> <img src="all-image/video.png" alt="">Video</label>
+                    </li>
+
+                    <li>
+                        <button class="kategori btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Kategori
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>Edukasi</li>
+                            <li>Sosial</li>
+                            <li>Pribadi</li>
+                        </ul>
+                    </li>
+
                     <li>Unggah</li>
                 </div>
             </div>
@@ -80,13 +116,10 @@ FAIRPAGE
         <div class="right-sidebar">
             <div class="sidebar-news">
                 <img src="all-image/more.png" class="info-icon">
-                <h3>Rekomendasi</h3>
-                <a href="#">High Demand for skilled manpower</a>
-                <span>1j lalu &middot; 696.969 pembaca</span>
-                <a href="#">High Demand for skilled manpower</a>
-                <span>1j lalu &middot; 696.969 pembaca</span>
-                <a href="#">High Demand for skilled manpower</a>
-                <span>1j lalu &middot; 696.969 pembaca</span>
+                <h3>Kategori</h3>
+                <a href="#">Edukasi</a>
+                <a href="#">Sosial</a>
+                <a href="#">Pribadi</a>
             </div>
         </div>
     </div>
