@@ -1,7 +1,5 @@
 @extends('layouts.navi')
 @section('content')
-<body>
-
     <!-- content -->
 FAIRPAGE
     <div class="container">

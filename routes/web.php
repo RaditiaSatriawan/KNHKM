@@ -35,8 +35,8 @@ Route::get('/greetings', [App\Http\Controllers\HomeController::class, 'greetings
 // Route::get('/jobpage', [App\Http\Controllers\HomeController::class, 'jobpage'])->name('jobpage');
 Route::get('/fair', [App\Http\Controllers\routeman::class, 'pekerjalepas'])->name('pekerjalepas');
 Route::get('/job', [App\Http\Controllers\routeman::class, 'jobseek'])->name('jobSeek');
-Route::get('/profil', [App\Http\Controllers\routeman::class, 'profile'])->name('profile');
-Route::get('/profiledit', [App\Http\Controllers\routeman::class, 'profile'])->name('profile');
+Route::get('/profil', [App\Http\Controllers\routeman::class, 'profilee'])->name('profile');
+Route::get('/profiledit', [App\Http\Controllers\routeman::class, 'profileedit'])->name('profile');
 Route::post('/uploadprofile', [App\Http\Controllers\PhotoController::class, 'store'])->name('profiledit');
 
 

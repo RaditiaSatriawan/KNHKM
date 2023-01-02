@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Setelan & Privasi</title>
-	<link rel = "icon" href ="../../../public/all-image/carfilogo1.png" type = "image/x-icon">
+	<link rel = "icon" href ="all-image/carfilogo1.png" type = "image/x-icon">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../../../public/profilesetting/style.css">
+	<link rel="stylesheet" type="text/css" href="profilesetting/style.css">
 </head>
 <body>
     <div class="back">
         <div class="row justify-content-left">
             <div class="col-2 text-justify">
-                <a href="../jobpage/index.html">Kembali</a>
+                <a href="jobpage/index.html">Kembali</a>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
 				<div class="profile-tab-nav border-right">
 					<div class="p-4">
 						<div class="img-circle text-center mb-3">
-							<img src="../../../public/all-image/user-1.png" alt="Image" class="shadow">
+							<img src="all-image/user-1.png" alt="Image" class="shadow">
 						</div>
 						<h4 class="text-center">Raditia Satriawan</h4>
 					</div>

@@ -13,7 +13,7 @@ class routeman extends Controller
     public function jobseek() {
         return view('jobpage/index');
      }
-     public function profile() {
+     public function profilee() {
         return view('profilepage/index');
      }
      public function profileedit() {
