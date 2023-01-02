@@ -32,8 +32,11 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
 Route::get('/greetings', [App\Http\Controllers\HomeController::class, 'greetings'])->name('/');
-Route::get('/jobpage', [App\Http\Controllers\HomeController::class, 'jobpage'])->name('jobpage');
+// Route::get('/jobpage', [App\Http\Controllers\HomeController::class, 'jobpage'])->name('jobpage');
 Route::get('/fair', [App\Http\Controllers\routeman::class, 'pekerjalepas'])->name('pekerjalepas');
 Route::get('/job', [App\Http\Controllers\routeman::class, 'jobseek'])->name('jobSeek');
 Route::get('/profil', [App\Http\Controllers\routeman::class, 'profile'])->name('profile');
+Route::get('/profiledit', [App\Http\Controllers\routeman::class, 'profile'])->name('profile');
+Route::post('/uploadprofile', [App\Http\Controllers\PhotoController::class, 'store'])->name('profiledit');
+
 
