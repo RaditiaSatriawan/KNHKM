@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Masuk - CarFi</title>
-    <link rel = "icon" href ="../../../public/all-image/carfilogo1.png" type = "image/x-icon">
+    <link rel="icon" href="../../../public/all-image/carfilogo1.png" type="image/x-icon">
     <link rel="stylesheet" href="logincss/style.css">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="center">
-      <h1>Masuk</h1>
-      <form action="{{ route('login') }}" method="POST">
-       {{ csrf_field() }}
-        <div class="txt_field">
-          <input id="email" name="email" type="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email"  autofocus>
-          <span></span>
-          <label for="username">Email</label>
-        </div>        
-        <div class="txt_field">
-          <input name="password" id="password" type="password" class="form-control @error('password') is-invalid @enderror"  required autocomplete="current-password" required>
-          <span></span>
-          <label>Kata Sandi</label>
-        </div>
-        <input type="submit" value="Masuk">
-        @error('email')
-         <span class="invalid-feedback" role="alert">
-             <strong>{{ $message }}</strong>
-          </span>
-        @enderror
-        @error('password')
-             <span class="invalid-feedback" role="alert">
+        <h1>Masuk</h1>
+        <form action="{{ route('login') }}" method="POST">
+            {{ csrf_field() }}
+            <div class="txt_field">
+                <input id="email" name="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                    value="{{ old('email') }}" required autocomplete="email" autofocus>
+                <span></span>
+                <label for="username">Email</label>
+            </div>
+            <div class="txt_field">
+                <input name="password" id="password" type="password"
+                    class="form-control @error('password') is-invalid @enderror" required
+                    autocomplete="current-password" required>
+                <span></span>
+                <label>Kata Sandi</label>
+            </div>
+            <input type="submit" value="Masuk">
+            @error('email')
+            <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
-              </span>
-        @enderror
-        <div class="signup_link">
-          Bukan Anggota? <a href="{{ route('register') }}">Daftar</a>
-        </div>
-      </form>
+            </span>
+            @enderror
+            @error('password')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+            <div class="signup_link">
+                Bukan Anggota? <a href="{{ route('register') }}">Daftar</a>
+            </div>
+        </form>
     </div>
 
-  </body>
+</body>
+
 </html>

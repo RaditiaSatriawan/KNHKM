@@ -10,7 +10,7 @@ function clock(){
     seconds = updateTime(seconds);
 
     // username disini
-    var name = "Username";
+    
 
     // if else midday
     midday = (hours >= 12) ? "PM" : "AM";
@@ -23,16 +23,16 @@ function clock(){
 
     // greeting condition
     if (hours < 12) {
-        var greeting = "Selamat Pagi " + name + " Yuk Semangat!"
+        var greeting = "Selamat Pagi " +  " Yuk Semangat!"
     }
     if (hours >= 12 && hours <= 15) {
-        var greeting = "Selamat Siang" + name;
+        var greeting = "Selamat Siang" ;
     }
     if (hours >= 15 && hours <= 18) {
-        var greeting = "Selamat Sore" + name;
+        var greeting = "Selamat Sore ";
     }
     if (hours >= 18 && hours <= 24) {
-        var greeting = "Selamat Malam " + name + " Yuk Semangat!";
+        var greeting = "Selamat Malam " +  " Yuk Semangat!";
     }
     document.getElementById("greeting").innerHTML = greeting;
 }
@@ -45,3 +45,5 @@ function updateTime(k) {
     }
 }
 clock();
+var name = document.getElementById("name").title;
+document.getElementById("namer").innerHTML = name;

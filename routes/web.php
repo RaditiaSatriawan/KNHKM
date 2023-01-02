@@ -15,9 +15,9 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('login\index');
-// });
+//  Route::get('/projectfair', function () {
+//      return view('login\index');
+//  });
 
 
 // Route::post('/login', [AuthController::class, 'authenticate']);
@@ -29,5 +29,11 @@ use App\Http\Controllers\AuthController;
 // }
 // );
 Auth::routes();
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
+Route::get('/greetings', [App\Http\Controllers\HomeController::class, 'greetings'])->name('/');
+Route::get('/jobpage', [App\Http\Controllers\HomeController::class, 'jobpage'])->name('jobpage');
+Route::get('/fair', [App\Http\Controllers\routeman::class, 'pekerjalepas'])->name('pekerjalepas');
+Route::get('/job', [App\Http\Controllers\routeman::class, 'jobseek'])->name('jobSeek');
+Route::get('/profil', [App\Http\Controllers\routeman::class, 'profile'])->name('profile');
+
