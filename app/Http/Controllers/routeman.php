@@ -19,4 +19,7 @@ class routeman extends Controller
      public function profileedit() {
       return view('profileSetting/index');
    }
+   public function testups() {
+      return view('profileSetting/testup');
+   }
 }

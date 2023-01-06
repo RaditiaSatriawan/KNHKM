@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('displaycompany');
             $table->string('displaycompanypostition');
             $table->string('displaylocation');
+            $table->integer('user_id')->unsigned()->index()->comment('author of the post');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
