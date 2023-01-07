@@ -11,7 +11,7 @@
                     <img src="all-image/user-1.png" class="profile-pic">
                     <h1>{{ Auth::user()->name }}</h1>
                     <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nesciunt!</b>
-                    <p>Bali, Indonesia &middot; <a href="#">Kontak</a> &middot; <a style="color: var(--bs-link-color);" onclick="event.preventDefault();document.getElementById('prope').submit();">Edit Profil<form id="prope" action="/profiledit" ></form></a></p>
+                    <p>Bali, Indonesia &middot; raditiaoffice@gmail.com &middot; 082236471079 &middot; <a style="color: var(--bs-link-color);" onclick="event.preventDefault();document.getElementById('prope').submit();">Edit Profil<form id="prope" action="/profiledit" ></form></a></p>
                     
                 </div>
             </div>

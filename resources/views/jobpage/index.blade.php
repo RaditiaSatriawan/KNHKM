@@ -1,4 +1,24 @@
 @extends('layouts.navi')
+    <head>
+        <style>
+            .create-post-links li:last-child{
+                display: flex;
+                flex-basis: 100%;
+                color: black;
+                border-bottom-left-radius: 15px;
+            }
+            .sidebar-news h2{
+                font-size: large;
+                padding: 10px;
+                margin-bottom: 15px;
+                color: #045be6;
+            }
+            .sidebar-news p{
+                font-size: medium;
+                padding: 10px;
+            }
+        </style>
+    </head>
     <!-- content -->
     @section('content')
     <div class="container">
@@ -31,8 +51,6 @@
                     <textarea rows="2" placeholder="Buat Unggahan"></textarea>
                 </div>
                 <div class="create-post-links">
-                    <li><img src="all-image/photo.png" alt="">Foto</li>
-                    <li><img src="all-image/video.png" alt="">Video</li>
                     <li>Unggah</li>
                 </div>
             </div>
@@ -82,14 +100,10 @@
 
         <div class="right-sidebar">
             <div class="sidebar-news">
-                <img src="all-image/more.png" class="info-icon">
-                <h3>Rekomendasi</h3>
-                <a href="#">High Demand for skilled manpower</a>
-                <span>1j lalu &middot; 696.969 pembaca</span>
-                <a href="#">High Demand for skilled manpower</a>
-                <span>1j lalu &middot; 696.969 pembaca</span>
-                <a href="#">High Demand for skilled manpower</a>
-                <span>1j lalu &middot; 696.969 pembaca</span>
+                <h2>Motivasi Hari Ini</h2>
+                <p>
+                    "If you are not willing to risk the unusual, you will have to settle for the ordinary."
+                </p>
             </div>
         </div>
     </div>
