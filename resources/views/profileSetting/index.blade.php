@@ -64,63 +64,63 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Nama Depan</label>
-                                        <input type="text" class="form-control" name="frontName" required>
+                                        <input type="text" class="form-control" name="frontName" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Nama Belakang</label>
-                                        <input type="text" class="form-control" name="backName" required>
+                                        <input type="text" class="form-control" name="backName" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Email</label>
-                                        <input type="text" class="form-control" name="displayemail" required>
+                                        <input type="text" class="form-control" name="displayemail" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input type="text" class="form-control" name="displayphone" required>
+                                        <input type="text" class="form-control" name="displayphone" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Perusahaan</label>
-                                        <input type="text" class="form-control" name="displaycompany" required>
+                                        <input type="text" class="form-control" name="displaycompany" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Posisi</label>
-                                        <input type="text" class="form-control" name="displaycompanypostition" required>
+                                        <input type="text" class="form-control" name="displaycompanypostition" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Provinsi</label>
-                                        <input type="text" class="form-control" name="province" required>
+                                        <input type="text" class="form-control" name="province" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Negara</label>
-                                        <input type="text" class="form-control" name="country" required>
+                                        <input type="text" class="form-control" name="country" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Foto Profil</label>
                                         <input class="form-control" type="file" id="formFile"
-                                            accept="image/png, image/jpeg" name="photo" required>
+                                            accept="image/png, image/jpeg" name="photo" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Foto Banner</label>
                                         <input class="form-control" type="file" id="formFile"
-                                            accept="image/png, image/jpeg" name="banner" required>
+                                            accept="image/png, image/jpeg" name="banner" >
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -142,7 +142,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Kata Sandi Lama</label>
-                                <input type="password" class="form-control" required>
+                                <input type="password" class="form-control" >
                             </div>
                         </div>
                     </div>
@@ -150,13 +150,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Kata Sandi Baru</label>
-                                <input type="password" class="form-control" required>
+                                <input type="password" class="form-control" >
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Konfirmasi Kata Sandi Baru</label>
-                                <input type="password" class="form-control" required>
+                                <input type="password" class="form-control" >
                             </div>
                         </div>
                     </div>
@@ -171,31 +171,31 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Perusahaan</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" >
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Jabatan</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" >
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Tahun Mulai Bekerja</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" >
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Tahun Selesai Bekerja</label>
-                                <input type="text" class="form-control" placeholder="Ketik Sekarang Jika Masih Bekerja" required>
+                                <input type="text" class="form-control" placeholder="Ketik Sekarang Jika Masih Bekerja" >
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Keterangan</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" >
                             </div>
                         </div>
                     </div>
@@ -211,13 +211,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Nama Universitas atau Penyelenggara Pendidikan</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" >
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Keterangan</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" >
                             </div>
                         </div>
                     </div>

@@ -10,7 +10,12 @@ class Post extends Model
     public $table = "profile";
     // use HasFactory;
     protected $fillable = ['displayname', 'displayemail',
-     'displayphone', 'displaycompany', 'displaycompanypostition', 'displaylocation',
-      'displayname', 'content','slug'];
-    
+    'displayphone', 'displaycompany', 'displaycompanypostition', 'displaylocation'];
+
+    public function getFotoUrl()
+    {
+        if($this->foto){
+            return asset('images/images/'.$this->foto);
+        }
+    }
 }
