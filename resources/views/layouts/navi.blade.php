@@ -7,6 +7,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+
+
+
     <title>{{ config('app.name', 'CarFi') }}</title>
 
     <!-- Fonts -->
@@ -85,6 +92,7 @@
                 <span>></span>
             </a>
             <a id="trig" class="profile-menu-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logoutform').submit();">
+               
                 <img src="all-image/logout.png" alt="">
                 <form id="logoutform" action="{{ route('logout') }}" method="POST" class="d-none">
                     @csrf
