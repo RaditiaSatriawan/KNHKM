@@ -15,7 +15,7 @@
 
 
     <title>{{ config('app.name', 'CarFi') }}</title>
-
+    <link rel = "icon" href ="../../public/all-image/carfilogo1.png" type = "image/x-icon">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
@@ -34,7 +34,45 @@
         cursor: pointer;
         color: rgb(52, 121, 211)
     }
+    @media only screen and (max-width: 600px) {
+    .search-box{
+        background: transparent;
+        width: auto;
+        padding: 0;
+    }
 
+    .search-box input{
+        width: 0;
+        padding: 0;
+    }
+
+    .navbar-center ul li a span{
+        display: none;
+    }
+
+    .navbar-center ul li a{
+        padding-right: 0;
+        margin-top: 25px !important;
+    }
+
+    .nav-profile-img{
+        width: 30px;
+    }
+
+    .container{
+        padding: 15px 3%;
+    }
+
+    .left-sidebar, .right-sidebar{
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+
+    .main-content{
+        flex-basis: 100%;
+    }
+}
 </style>
 </head>
 <body>
@@ -55,7 +93,7 @@
             <li><a onclick="event.preventDefault();document.getElementById('jobsik').submit();"><img src="all-image/home.png" alt="">
                 <form id="jobsik" action="/job" class="d-none">
                 @csrf
-            </form><span>Melamar
+            </form><span    >Melamar
                         Pekerjaan</span></a></li>
             <li><a onclick="event.preventDefault();document.getElementById('pekpas').submit();"><img src="all-image/network.png" alt="">
                 <form id="pekpas" action="/fair" class="d-none">

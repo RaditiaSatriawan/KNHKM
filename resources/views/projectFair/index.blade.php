@@ -2,6 +2,10 @@
 @section('content')
 <head>
     <style>
+        .create-post-links{
+            display: flex;
+            flex-basis: 100%;
+        }
         input[type="file"]{
             display: none;
         }
@@ -15,6 +19,8 @@
             border-radius: 0;
             border-bottom-right-radius: 0;
             border: 0;
+            display: flex;
+            flex-basis: 100%;
         }
         .dropdown-menu li:last-child{
             background: white;
@@ -22,6 +28,25 @@
             border-top: 0;
             border-right: 0;
             border-bottom-right-radius: 0;
+        }
+        .create-post-links li:last-child{
+            display: flex;
+            flex-basis: 100%;
+            color: white;
+            border-bottom-left-radius: 0;
+        }
+        .sidebar-news{
+            margin-bottom: 15px;
+        }
+        .sidebar-news h2{
+            font-size: large;
+            padding: 10px;
+            margin-bottom: 15px;
+            color: #045be6;
+        }
+        .sidebar-news p{
+            font-size: medium;
+            padding: 10px;
         }
     </style>
 </head>
@@ -52,16 +77,6 @@
                 </div>
                 <div class="create-post-links justify-content-center">
                     <li>
-                        <input type="file" id="photo" accept="image/*">
-                        <label for="file"> <img src="all-image/photo.png" alt="">Foto</label>
-                    </li>
-
-                    <li>
-                        <input type="file" id="photo" accept="image/*">
-                        <label for="file"> <img src="all-image/video.png" alt="">Video</label>
-                    </li>
-
-                    <li>
                         <button class="kategori btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
                             Kategori
                         </button>
@@ -84,7 +99,7 @@
                         <small>2 Jam Yang Lalu</small>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum excepturi atque doloremque temporibus accusantium, illum delectus quasi eum et aliquam quod consequatur blanditiis harum quia. Nesciunt similique optio ex.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum excepturi atque doloremque temporibus accusantium, illum delectus quasi eum et aliquam quod consequatur blanditiis harum quia.</p>
                 <img src="all-image/post-image-1.png" width="100%">
             </div>
             <div class="post">
@@ -120,6 +135,12 @@
                 <a href="#">Edukasi</a>
                 <a href="#">Sosial</a>
                 <a href="#">Pribadi</a>
+            </div>
+            <div class="sidebar-news">
+                <h2>Motivasi Hari Ini</h2>
+                <p>
+                    "If you are not willing to risk the unusual, you will have to settle for the ordinary."
+                </p>
             </div>
         </div>
     </div>
