@@ -165,37 +165,39 @@
                         <button class="btn btn-light">Batal</button>
                     </div>
                 </div>
+                <form action="/uploadprofile" method="POST" enctype="multipart/form-data">
+                    @csrf
                 <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
                     <h3 class="mb-4">Pengalaman</h3>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Perusahaan</label>
-                                <input type="text" class="form-control" >
+                                <input type="text" class="form-control" name="companyname">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Jabatan</label>
-                                <input type="text" class="form-control" >
+                                <input type="text" class="form-control" name="companyrank">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Tahun Mulai Bekerja</label>
-                                <input type="text" class="form-control" >
+                                <input type="text" class="form-control" name="companyserve">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Tahun Selesai Bekerja</label>
-                                <input type="text" class="form-control" placeholder="Ketik Sekarang Jika Masih Bekerja" >
+                                <input type="text" class="form-control" placeholder="Ketik Sekarang Jika Masih Bekerja" name="companydeco">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Keterangan</label>
-                                <input type="text" class="form-control" >
+                                <input type="text" class="form-control" name="desc">
                             </div>
                         </div>
                     </div>

@@ -9,9 +9,13 @@
                 <img class="banner" src="all-image/cover-pic.png" width="100%">
                 <div class="profile-container-inner">
                     <img src="all-image/user-1.png" class="profile-pic">
-                    <h1>{{ Auth::user()->name }}</h1>
+                    <h1>@if ($data->displayname == NULL) 
+                        {{Auth::user()->name;}}
+                     @else 
+                        {{$data->displayname;}}
+                      @endif</h1>
                     <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nesciunt!</b>
-                    <p>Bali, Indonesia &middot; raditiaoffice@gmail.com &middot; 082236471079 &middot; <a style="color: var(--bs-link-color);" onclick="event.preventDefault();document.getElementById('prope').submit();">Edit Profil<form id="prope" action="/profiledit" ></form></a></p>
+                    <p>{{$data->displaylocation}} &middot; {{$data->displayemail}} &middot; {{$data->displayphone}} &middot; <a style="color: var(--bs-link-color);" onclick="event.preventDefault();document.getElementById('prope').submit();">Edit Profil<form id="prope" action="/profiledit" ></form></a></p>
                     
                 </div>
             </div>
@@ -26,8 +30,8 @@
                 <div class="profile-desc-row">
                     <img src="all-image/microsoft.png" alt="">
                     <div>
-                        <h3>Lead Front-End Developer</h3>
-                        <b>Microsoft</b>
+                        <h3>{{$data->displaycompanypostition}}</h3>
+                        <b>{{$data->displaycompany}}</b>
                         <b>2021 - Sekarang</b>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro repellat velit, earum iste
                             labore similique sed temporibus eligendi fugiat dolor, iusto, vero recusandae voluptatem

@@ -22,4 +22,5 @@ class routeman extends Controller
    public function testups() {
       return view('profileSetting/testup');
    }
+
 }

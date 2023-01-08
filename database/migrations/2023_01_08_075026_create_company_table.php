@@ -13,19 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        if(!Schema::hasTable('profile')){
-        Schema::create('profile', function (Blueprint $table) {
+        if(!Schema::hasTable('company')){
+        Schema::create('company', function (Blueprint $table) {
             $table->id();
-            $table->string('displayname');
-            $table->string('displayemail');
-            $table->string('displayphone');
-            $table->string('displaycompany');
-            $table->string('displaycompanypostition');
-            $table->string('displaylocation');
+            $table->string('companyname');
+            $table->string('companyrank');
+            $table->string('companyserve');
+            $table->string('companydeco');
+            $table->longText('desc');
             $table->bigInteger('user_id')->unsigned();
+            
             $table->timestamps();
         });
-        Schema::table('profile', function($table) {
+        Schema::table('company', function($table) {
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
@@ -38,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profile');
+        Schema::dropIfExists('company');
     }
 };

@@ -100,5 +100,11 @@ class PhotoController extends Controller
         }
 
 }
+        public function show($extradata){
+            $id = Auth::id();
+            $data = Post::where('user_id', Auth::id())->first();
+            
+            
+        }
 }
 
