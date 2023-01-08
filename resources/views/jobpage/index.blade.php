@@ -66,7 +66,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum excepturi atque doloremque
                     temporibus accusantium, illum delectus quasi eum et aliquam quod consequatur blanditiis harum quia.
                     Nesciunt similique optio ex.</p>
-                <img src="all-image/post-image-1.png" width="100%">
             </div>
             <div class="post">
                 <div class="post-author">
@@ -80,7 +79,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum excepturi atque doloremque
                     temporibus accusantium, illum delectus quasi eum et aliquam quod consequatur blanditiis harum quia.
                     Nesciunt similique optio ex.</p>
-                <img src="all-image/post-image-1.png" width="100%">
             </div>
             <div class="post">
                 <div class="post-author">
@@ -94,7 +92,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatum excepturi atque doloremque
                     temporibus accusantium, illum delectus quasi eum et aliquam quod consequatur blanditiis harum quia.
                     Nesciunt similique optio ex.</p>
-                <img src="all-image/post-image-1.png" width="100%">
             </div>
         </div>
 

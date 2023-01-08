@@ -10,12 +10,6 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-
-
-
-
-    <title>{{ config('app.name', 'CarFi') }}</title>
-    <link rel = "icon" href ="../../public/all-image/carfilogo1.png" type = "image/x-icon">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
@@ -24,7 +18,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Melamar Pekerjaan - CarFi</title>
+    <title>CarFi</title>
     <link rel="icon" href="all-image/carfilogo1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -122,11 +116,6 @@
             <a href="profileSetting/index.html" class="profile-menu-link">
                 <img src="all-image/setting.png" alt="">
                 <p>Setelan & Privasi</p>
-                <span>></span>
-            </a>
-            <a href="" class="profile-menu-link">
-                <img src="all-image/help.png" alt="">
-                <p>Ketentuan Privasi</p>
                 <span>></span>
             </a>
             <a id="trig" class="profile-menu-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logoutform').submit();">
