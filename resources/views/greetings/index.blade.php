@@ -25,8 +25,11 @@
 
     <div class="row justify-content-center">
         <div class="col-md-2 text-center">
-            <form action="/">
+            <form action="/home">
                 <button type="submit" class="btn btn-outline-primary btn-lg">Mulai Bekerja</button>
+            </form>
+            <form action="/faz">
+                <button type="submit" class="btn btn-outline-primary btn-lg">FAQ</button>
             </form>
         </div>
     </div>

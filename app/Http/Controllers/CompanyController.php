@@ -70,7 +70,19 @@ class CompanyController extends Controller
         // );// $formData = array_merge($add,$formData);
 
             //update post without image
-            $company->update([
+
+        // if (is_null($company)) {
+        //     $company->update([
+        //         'companyname'     => $request->companyname,
+        //         'companyrank'   => $request->companyrank,
+        //         'companyserve'   => $request->companyserve,
+        //         'companydeco'   => $request->companydeco,
+        //         'desc'   => $request->desc,
+        //     ]);
+        // }
+        // else { $company =
+             Company::create([
+                'user_id'   => auth()->id(),
                 'companyname'     => $request->companyname,
                 'companyrank'   => $request->companyrank,
                 'companyserve'   => $request->companyserve,
@@ -78,7 +90,8 @@ class CompanyController extends Controller
                 'desc'   => $request->desc,
             ]);
         }
-
+    }
+    
 
         // public function index(){
         //     $id = Auth::id();
@@ -86,5 +99,5 @@ class CompanyController extends Controller
              
             
         // }
-}
+
 

@@ -73,7 +73,7 @@
  <!-- navbar -->
  <nav class="navbar">
     <div class="navbar-left">
-        <a href="{{ url('/') }}" class="logo"><img src="all-image/carfilogo1.png" alt=""></a>
+        <a href="{{ url('/home') }}" class="logo"><img src="all-image/carfilogo1.png" alt=""></a>
 
         <!-- search -->
         <div class="search-box">
@@ -112,9 +112,11 @@
                     <a id="trig2" onclick="event.preventDefault();document.getElementById('prop2').submit();"><form id="prop2" action="/profil">Lihat Profil</form></a>
                 </div>
             </div>
-            <hr>
-            <a href="profileSetting/index.html" class="profile-menu-link">
+            <hr>            <a onclick="event.preventDefault();document.getElementById('pro').submit();" class="profile-menu-link">
+            
+
                 <img src="all-image/setting.png" alt="">
+                <form id="pro" action="/profiledit"></form>
                 <p>Setelan & Privasi</p>
                 <span>></span>
             </a>

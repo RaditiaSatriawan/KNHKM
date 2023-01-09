@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../../public/faq/style.css">
+    <link rel="stylesheet" href="faq/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - CarFi</title>
-    <link rel = "icon" href ="../../../public/all-image/carfilogo1.png" type = "image/x-icon">
+    <link rel = "icon" href ="all-image/carfilogo1.png" type = "image/x-icon">
 </head>
 
 <body>
     <div class="accordion">
         <div class="image-box">
-            <a href="../index.html">Kembali</a>
-            <img src="../../../public/all-image/faq.png" alt="Accordion Image">
+            <a href="{{ URL::previous() }}">Kembali</a>
+            <img src="all-image/faq.png" alt="Accordion Image">
         </div>
         <div class="accordion-text">
             <div class="title">FAQ</div>
@@ -64,7 +64,7 @@
     </div>
 
 
-    <script src="../../../public/faq/script.js"></script>
+    <script src="faq/script.js"></script>
 
 </body>
 

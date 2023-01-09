@@ -32,12 +32,10 @@
                 <h2>Pengalaman</h2>
                 <div class="profile-desc-row">
                     <div>
-                        <h3>{{$data->displaycompanypostition}}</h3>
-                        <b>{{$data->displaycompany}}</b>
-                        <b>2021 - Sekarang</b>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro repellat velit, earum iste
-                            labore similique sed temporibus eligendi fugiat dolor, iusto, vero recusandae voluptatem
-                            necessitatibus beatae assumenda enim sit qui!</p>
+                        <h3>{{$company->companyrank}}</h3>
+                        <b>{{$company->companyname}}</b>
+                        <b>{{$company->companyserve}}</b>
+                        <p>{{$company->desc}}</p>
                         <hr>
                     </div>
                 </div>

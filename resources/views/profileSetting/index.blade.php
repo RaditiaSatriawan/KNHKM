@@ -16,7 +16,7 @@
     <div class="back">
         <div class="row justify-content-left">
             <div class="col-2 text-justify">
-                <a href="jobpage/index.html">Kembali</a>
+                <a href="{{ URL::previous() }}">Kembali</a>
             </div>
         </div>
     </div>
@@ -165,9 +165,10 @@
                         <button class="btn btn-light">Batal</button>
                     </div>
                 </div>
-                <form action="/uploadprofile" method="POST" enctype="multipart/form-data">
-                    @csrf
                 <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+                <form action="/uploadcompany" method="POST" enctype="multipart/form-data">
+                    @csrf
+                
                     <h3 class="mb-4">Pengalaman</h3>
                     <div class="row">
                         <div class="col-md-6">

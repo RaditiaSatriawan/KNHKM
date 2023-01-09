@@ -87,8 +87,9 @@ class PhotoController extends Controller
             ]);
 
         } else {
-
+            // dd($post);
             //update post without image
+            if (!is_null($post)) {
             $post->update([
                 'displayname'     => ($request->frontName) . ($request->backName),
                 'displayemail'   => $request->displayemail,
@@ -98,6 +99,18 @@ class PhotoController extends Controller
                 'displaylocation'   => ($request->province) . ($request->coutry)
             ]);
         }
+        else { 
+            $post = Post::create([
+                'user_id'   => auth()->id(),
+                'displayname'     => ($request->frontName) . ($request->backName),
+                'displayemail'   => $request->displayemail,
+                'displayphone'   => $request->displayphone,
+                'displaycompany'   => $request->displaycompany,
+                'displaycompanypostition'   => $request->displaycompanypostition,
+                'displaylocation'   => ($request->province) . ($request->coutry),
+            ]);
+        }
+    }
 
 }
         public function show($extradata){

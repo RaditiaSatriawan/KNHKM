@@ -10,7 +10,7 @@ class Post extends Model
     public $table = "profile";
     // use HasFactory;
     protected $fillable = ['displayname', 'displayemail',
-    'displayphone', 'displaycompany', 'displaycompanypostition', 'displaylocation'];
+    'displayphone', 'displaycompany', 'displaycompanypostition', 'displaylocation', 'user_id'];
     
     public function getFotoUrl()
     {
