@@ -11,7 +11,7 @@ class Post extends Model
     // use HasFactory;
     protected $fillable = ['displayname', 'displayemail',
     'displayphone', 'displaycompany', 'displaycompanypostition', 'displaylocation'];
-
+    
     public function getFotoUrl()
     {
         if($this->foto){

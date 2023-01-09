@@ -9,11 +9,14 @@
                 <img class="banner" src="all-image/cover-pic.png" width="100%">
                 <div class="profile-container-inner">
                     <img src="all-image/user-1.png" class="profile-pic">
-                    <h1>@if ($data->displayname == NULL) 
-                        {{Auth::user()->name;}}
-                     @else 
-                        {{$data->displayname;}}
-                      @endif</h1>
+                    <h1>
+                        @if (is_null($data))
+                    {{Auth::user()->name;}}
+                    @else 
+                    
+                    {{$data->displayname;}}
+                    @endif
+                </h1>
                     <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nesciunt!</b>
                     <p>{{$data->displaylocation}} &middot; {{$data->displayemail}} &middot; {{$data->displayphone}} &middot; <a style="color: var(--bs-link-color);" onclick="event.preventDefault();document.getElementById('prope').submit();">Edit Profil<form id="prope" action="/profiledit" ></form></a></p>
                     
